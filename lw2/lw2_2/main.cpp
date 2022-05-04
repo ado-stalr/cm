@@ -18,7 +18,7 @@ std::optional<Args> ParseArgs(int argc, char* argv[])
     if (argc != 2)
     {
         std::cout << "Invalid argument count\n";
-        std::cout << "Usage: lw3_3.exe <matrix fileName>\n";
+        std::cout << "Usage: lw2_2.exe <matrix fileName>\n";
         return std::nullopt;
     }
 
