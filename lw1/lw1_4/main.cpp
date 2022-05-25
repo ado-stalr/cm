@@ -43,7 +43,6 @@ int main(int argc, char* argv[])
 		while (combination[m] == n - k + m)
 		{
 			--m;
-
 		}
 		++combination[m];
 		for (int i = m + 1; i <= k; ++i)
