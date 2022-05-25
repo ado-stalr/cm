@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.21)
-project(lw1_2)
+project(lw1_1)
 
 set(BOOST_ROOT "C:/boost_1_79_0")
 set(BOOSTROOT "C:/boost_1_79_0")
