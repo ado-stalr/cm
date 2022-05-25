@@ -39,11 +39,17 @@ int main(int argc, char* argv[])
 	{
 		//PrintVector(combination, 1);
 		m = k;
+
 		while (combination[m] == n - k + m)
+		{
 			--m;
+
+		}
 		++combination[m];
 		for (int i = m + 1; i <= k; ++i)
+		{
 			combination[i] = combination[i - 1] + 1;
+		}
 	}
 	printf("Time: %.3f \n", time.elapsed());
 }
