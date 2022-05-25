@@ -6,31 +6,29 @@
 #include <vector>
 #include <boost/timer.hpp>
 
-using namespace std;
-
-void PrintVector(const vector<int>& v, const unsigned int offset = 0)
+void PrintVector(const std::vector<int>& v, const unsigned int offset = 0)
 {
-	copy(v.begin() + offset, v.end(), ostream_iterator<int>(cout, ""));
-	cout << '\n';
+	copy(v.begin() + offset, v.end(), std::ostream_iterator<int>(std::cout, ""));
+	std::cout << std::endl;
 }
 
 int main(int argc, char* argv[])
 {
 	if (argc != 3)
 	{
-		cout << "Invalid count  of arguments";
+		std::cout << "Invalid count  of arguments";
 		return 1;
 	}
 
-	const size_t k = stoi(argv[1]);
-	const size_t n = stoi(argv[2]);
+	const size_t k = std::stoi(argv[1]);
+	const size_t n = std::stoi(argv[2]);
 	if (k > n)
 	{
-		cout << "Invalid args\n";
+		std::cout << "Invalid args" << std::endl;
 		return 1;
 	}
 
-	vector<int> combination(k + 1);
+	std::vector<int> combination(k + 1);
 	char m = 1;
 	combination[0] = -1;
 	iota(combination.begin() + 1, combination.end(), 1);
