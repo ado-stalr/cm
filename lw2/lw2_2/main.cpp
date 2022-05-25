@@ -78,7 +78,6 @@ void DfsAndSort(Matrix const& matrix, int vertex, std::vector<bool> &visited, st
 		{
 			DfsAndSort(matrix, i, visited, topSort);
 		}
-
 	}
 	topSort.push_back(vertex);
 }
